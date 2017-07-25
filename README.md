@@ -29,7 +29,6 @@ And the probability of a geometric random variable with parameter *p* is:
 	<img src="https://latex.codecogs.com/svg.latex?%5Clarge%20f%28i%29%20%3D%20p%281-p%29%5E%7Bi%7D%2C%20i%20%3D%200%2C1%2C2%2C..." alt="f(i) = p(1-p)^{i}, i = 0,1,2,...">
 </p>
 
-
 *task1.m* contains analytical analysis for the probability of a packet being received with 0 ,1 or 2 or more errors, given a bit error rate.
 
 All in all, the following variables are available in *task1.m*:
@@ -40,7 +39,7 @@ All in all, the following variables are available in *task1.m*:
 | error_rates | Error rate probability               |
 | B           | Size of the packet (bits)            |
 
-Also in the same m-file there's also analysis that computes the same values for packets sizes of an according probability and packet sizes with a size of *B* plus a gemoetric random value with the parameter *p*.
+Also in the same m-file there's also analysis that computes the same values for packets sizes of an according probability and packet sizes with a size of *B* plus a geometric random value with the parameter *p*.
 
 
 ### 2.2 Detection rates of wireless interference
@@ -57,7 +56,7 @@ Using *Bayes'Law* we determined the following probabilities:
 
 ### 2.3 Interference with variation along the time
 
-In the *task3.m* case it was considered a wireless link between multiple stations for data communications. The bit error rate (ber) introduced by the wireless link due to the variation along with time of the propagation and interference factors is approximately given by the following Markov chain:
+In the *task3.m* case it was considered a wireless link between multiple stations for data communications. The bit error rate (*ber*) introduced by the wireless link due to the variation along with time of the propagation and interference factors is approximately given by the following Markov chain:
 
 <p align="center"> 
 	<img src="https://github.com/luminoso/npr-simulator2/raw/master/doc/simulator2_markov.png" alt="Markov chain">
@@ -69,7 +68,7 @@ State transitions are in number of transitions per hour.
  * Average time in each state
  * Average bit error rate of the link
  * Average time duration (in minutes) that the link is in each state
- * If a link is consideren in interference state when its bit error rate is *p* the probability of a link being in the interference state
+ * If a link is considered in interference state when its bit error rate is *p* the probability of a link being in the interference state
 
 According to probability of state 0:
 
